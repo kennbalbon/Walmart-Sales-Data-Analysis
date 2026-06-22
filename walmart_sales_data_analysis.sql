@@ -87,7 +87,7 @@ GROUP BY Store
 ),
 ranked_stores AS 
 (
--- Assign a top tank and a bottom rank to every store
+-- Assign a top rank and a bottom rank to every store
 SELECT
 	Store,
     avg_weekly_sales,
@@ -118,7 +118,7 @@ GROUP BY Store
 ),
 ranked_stores AS 
 (
--- Assign a top tank and a bottom rank to every store
+-- Assign a top rank and a bottom rank to every store
 SELECT
 	Store,
     avg_weekly_sales,
