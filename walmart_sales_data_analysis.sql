@@ -146,7 +146,7 @@ SELECT
 	ROUND(
 		(AVG(CASE WHEN Holiday_Flag = 1 THEN Weekly_Sales END) -
         AVG(CASE WHEN Holiday_Flag = 0 THEN Weekly_Sales END)) / 
-        AVG(CASE WHEN Holiday_Flag = 0 THEN Weekly_Sales END) * 100, 
+        AVG(CASE WHEN Holiday_Flag = 0 THEN Weekly_Sales END), 
         2) AS holiday_lift_percentage
 FROM walmart_staging
 ;
